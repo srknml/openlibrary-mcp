@@ -1,6 +1,6 @@
 {
   "name": "@srknml/openlibrary-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An educational MCP server wrapping the Open Library API — learn how to build MCP servers from scratch",
   "type": "module",
   "bin": {
@@ -22,6 +22,10 @@
   "files": [
     "build"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srknml/openlibrary-mcp.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
