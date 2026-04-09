@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript — ES2022 gives us top-level await, which we use in index.ts
+    "target": "ES2022",
+
+    // "Node16" module + moduleResolution is REQUIRED when:
+    // 1. Your package.json has "type": "module" (ESM)
+    // 2. You're using a package like @modelcontextprotocol/sdk that uses sub-path exports
+    //
+    // Without this, TypeScript won't resolve imports like:
+    //   "@modelcontextprotocol/sdk/server/mcp.js"
+    // and relative imports like:
+    //   "./server.js"  (pointing at the compiled .js output)
+    "module": "Node16",
+    "moduleResolution": "Node16",
+
+    "outDir": "./build",
+    "rootDir": "./src",
+
+    // strict enables: strictNullChecks, noImplicitAny, strictFunctionTypes, etc.
+    // This is highly recommended — it catches entire classes of bugs at compile time
+    "strict": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "openlibrary-mcp",
+  "version": "1.0.0",
+  "description": "An educational MCP server wrapping the Open Library API — learn how to build MCP servers from scratch",
+  "type": "module",
+  "bin": {
+    "openlibrary-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "files": ["build"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "openlibrary": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/build/index.js"]
+    }
+  }
+}
