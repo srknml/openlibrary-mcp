@@ -1,10 +1,10 @@
 {
-  "name": "openlibrary-mcp",
+  "name": "@srknml/openlibrary-mcp",
   "version": "1.0.0",
   "description": "An educational MCP server wrapping the Open Library API — learn how to build MCP servers from scratch",
   "type": "module",
   "bin": {
-    "openlibrary-mcp": "./build/index.js"
+    "openlibrary-mcp": "build/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -19,7 +19,12 @@
     "@types/node": "^22.0.0",
     "typescript": "^5.7.0"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "engines": {
     "node": ">=18.0.0"
   }
